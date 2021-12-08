@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Add</title>
+</head>
+<body>
+    <nav class="zone green">
+        <ul class="main-nav">
+            <li><a href="ProductList.html"><button class="btn btn-primary btn-xl" type="button">SAVE</button></a></li>
+            <li><a href="ProductList.html"><button id="btn btn-primary btn-xl" type="button">CANCEL</button></a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="/action_page.php" method="post" id="product_form">
+             <input type="number" id="dimensions" value="" required placeholder="Enter dimensions"
+             oninvalid="this.setCustomValidity('Please, submit required data')"
+             oninput="this.setCustomValidity('')"/>
+             <input type="number" id="dimensions" required
+             oninvalid="this.setCustomValidity('Please, provide the data of indicated type')"
+             oninput="this.setCustomValidity('')"/>
+
+
+
+             <input type="number" id="weight" value="" required placeholder="Enter weight"
+             oninvalid="this.setCustomValidity('Please, submit required data')"
+             oninput="this.setCustomValidity('')"/>
+
+
+
+             <input type="number" id="Size" value="" required placeholder="Enter size"
+             oninvalid="this.setCustomValidity('Please, submit required data')"
+             oninput="this.setCustomValidity('')"/>
+
+
+
+            <input type="submit" name="submit" value="Submit" />
+      
+            <header class="main-header">Add new product</header>
+            <div class="data">
+            <label for id="SKU">sku:</label>
+            <input type="number" id="SKU" placeholder="Item quantity"/>
+                <label for id="name">name:</label>
+                <input type="text" id="name" placeholder="Name..."/>
+                <label for id="price">Price:</label>
+                <input type="text" id="price" placeholder="Price"/>
+                <label for id="type">productType:</label>
+                <input type="type" id="productType" productTypeSpecificAttribute/>
+                        <ul>
+                            <li>
+                                <input type="value/text">DVD
+                            </li>
+                            <li>
+                                <input type="value/text">Book
+                            </li>
+                            <li>
+                                <input type="value/text">Furniture
+                            </li>
+                        </ul>
+
+                 <label for id="type">productTypeSpecificAttribute:</label>
+                <input type="type" id="productTypeSpecificAttribute" placeholder="productSpecificAttribute"/>
+                                <ul>
+                                    <li>
+                                        <input type="value/text" id="size" placeholder="MB">DVD-disc
+                                    </li>
+                                    <li>
+                                        <input type="value/text" id="weight" placeholder="KG">Book
+                                    </li>
+                                    <li>
+                                        <input type="value/text" id="dimensions"placeholder="HxWxL">Furniture
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            <input type="value/text" id="height" placeholder="Height">Dimensions
+                                        </li>
+                                        <li>
+                                            <input type="value/text" id="width" placeholder="Width">Dimensions
+                                        </li>
+                                        <li>
+                                            <input type="value/text" id="length"placeholder="Length">Dimensions
+                                        </li>
+                                    </ul>
+                                </ul>
+
+                
+            </div>
+            <div class="panel">
+                <button id="add-product-button" class="button">Add</button>
+                <a href="#/products">
+                    <button class="button" id="cancel-button">Cancel</button>
+                </a>
+            </div>
+        </div>
+        </form>
+    </section>
+
+        <script type="text/javascript" src="scriptAddProduct.js"></script>
+</body>
+</html>

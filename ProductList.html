@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your_website</title>
+    <link rel="stylesheet" type="text/css" href="StyleProductList.css">
+    
+</head>
+    <h1>Product List</h1>
+<body>
+    <nav class="zone green">
+        <ul class="main-nav">
+            <li><a href="add-product.html"><button class="btn btn-primary btn-xl">ADD</button></a></li>
+            <button id="delete-button" onclick="massDelete()">MASS DELETE</button></li>
+            <li>
+             
+          </ul>
+    </nav>
+
+      <div class="container d-flex align-items-center h-100"> 
+        <div class="delete-checkbox">
+            <div class="zone grid-wrapper">
+             
+              <div class="box zone" name="delete-checkbox">JVC 200123 Acme DISC 1.00 $ Size: 700 MB
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+              </div>
+                
+                <div class="box zone" name="delete-checkbox">JVC 200123 Acme DISC 1.00 $ Size: 700 MB
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">JVC 200123 Acme DISC 1.00 $ Size: 700 MB
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">JVC 200123 Acme DISC 1.00 $ Size: 700 MB
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">GGWP0007 War and Peace 20.00 $ Weight: 2 KG
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                 </div>
+                <div class="box zone" name="delete-checkbox">GGWP0007 War and Peace 20.00 $ Weight: 2 KG
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">GGWP0007 War and Peace 20.00 $ Weight: 2 KG
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">GGWP0007 War and Peace 20.00 $ Weight: 2 KG
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">TR120555 Chair 40.00 $ Dimension: 24x45x15
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">TR120555 Chair 40.00 $ Dimension: 24x45x15
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">TR120555 Chair 40.00 $ Dimension: 24x45x15
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+                <div class="box zone" name="delete-checkbox">TR120555 Chair 40.00 $ Dimension: 24x45x15
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </div>
+            </div> 
+        </div>
+      </div> 
+      
+        
+   
+      <script>
+
+function massDelete() {
+    if ("delete-button".clicked === true) {
+      return ("delete-checkbox".checked === true);
+    } else {
+      return ("delete-checkbox".unchecked === false);
+    };
+    console.log(massDelete)
+  }
+
+
+    </script>
+
+
+<script type="text/javascript" src="scriptProductList.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
